@@ -1,9 +1,9 @@
 body {
-  margin: 0;padding: 0;box-sizing: border-box;text-align: center;background-color: #B9B4C7;
+  margin: 0;padding: 0;box-sizing: border-box;text-align: center;background-color:  lightgrey;
 }
 
 .todo-form{
-  width:1000px;height: auto; margin-top: 200px; margin-left: 450px; background-color: whitesmoke;border-radius: 20px; box-shadow: 0 20px 20px rgba(0,0,0,0.6);margin-bottom: 130px;
+  width:1000px;height: auto;margin-top: 200px; margin-left: 450px; background-color:white /* #FFF6F6 */;border-radius: 20px; box-shadow: 0 20px 20px rgba(0,0,0,0.6);margin-bottom: 130px;
 }
 h1{
   font-size: 50px;padding-top: 40px;color:rgb(14, 14, 77);
@@ -13,22 +13,28 @@ form{
   padding-bottom: 20px;padding-top: 20px;
 }
 input{
-  font-size: 20px;font-weight:bold; text-align: center;color: rgb(14, 14, 77);background-color: #B9B4C7;border: none;border:2px solid black;
-  height:39px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;border-radius: 5px;
+  font-size: 20px;font-weight:bold; text-align: left;color: rgb(14, 14, 77);background-color:whitesmoke;border: none;border:2px solid rgb(14, 14, 77);
+  height:45px;padding-left: 10px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 button{
-  width:100px;height: 46px;background-color: rgb(14, 14, 77);color: white;border: none;font-size: 15px;font-weight: bold;border-radius: 5px;margin-left:1px;
+  width:150px;height: 43px;background-color:  lightslategray;color: white;border: none;font-size: 20px;font-weight: bold;border-radius: 5px;margin-left:1px;margin-top: 10px;
 }
 
 .content-2{
-  display: flex;padding-left: 190px;
+  display: flex;padding-left: 200px;
+}
+.content-button{
+  display: flex;flex-wrap: wrap;position: absolute;/* right:720px; */
+}
+.btn-edit{
+  margin-left: 367px;
 }
 .content-2 button{
-  margin-top: 20px;border-radius: 5px;height: 46px;width:70px;
+  margin-top: 26px;border-radius: 5px;height: 46px;width:70px;font-size: 15px;
 }
 p{
-  font-size: 20px;width: 400px;height: 32px; font-weight: bold;text-align: center;padding-top: 10px;
-  color: rgb(14, 14, 77);background-color: #B9B4C7;border-radius: 5px;border: 2px solid black; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;position: relative;width: 500px;height: 40px; font-weight: bold;text-align: left;padding-left: 10px; padding-top: 15px;color: rgb(14, 14, 77);background-color:whitesmoke;
+  border: 2px solid rgb(14, 14, 77); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h4{
   margin-top: 40px;font-size: 50px;padding-bottom: 30px;color: rgb(14, 14, 77);

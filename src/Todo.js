@@ -64,7 +64,8 @@ const Todo= () => {
     <div className="todo-form">
         <h1>TODO LIST</h1>
       <form>
-        <input type="text" name="message" id="message" size={40} placeholder="Enter Some Text" value={message.text} onChange={changeMessage}/>
+        <input type="text" name="message" id="message" size={43} placeholder="Enter Some Text" value={message.text} onChange={changeMessage}/>
+        <br/>
         {editingItem.isEditing ? (
           <button onClick={handleEdit} type="submit">
             Submit
@@ -83,8 +84,11 @@ const Todo= () => {
           return (
             <div className="content-2" key={id}>
               <p>{text}</p>
-              <button onClick={() => changeEditState(id)}>Edit</button>
-              <button onClick={() => handleDelete(id)}>Delete</button>
+              <div className="content-button">
+              <button className="btn-edit" onClick={() => changeEditState(id)}>Edit</button>
+              <br/>
+              <button className="btn-delete" onClick={() => handleDelete(id)}>Delete</button>
+              </div>
             </div>
           );
         })}
