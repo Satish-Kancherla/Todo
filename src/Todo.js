@@ -2,20 +2,11 @@ import React, { useState } from "react";
 
 const Todo= () => {
   const [list, setList] = useState([]);
-  const [message, setMessage] = useState({
-    text: "",
-    id: "",
-  });
-  const [editingItem, setEditingItem] = useState({
-    id: "",
-    isEditing: false,
-  });
+  const [message, setMessage] = useState({text: "",id: "",});
+  const [editingItem, setEditingItem] = useState({id: "",isEditing: false,});
 
   const changeMessage = (e) => {
-    setMessage({
-      ...message,
-      text: e.target.value,
-    });
+    setMessage({...message,text: e.target.value,});
   };
 
   const handleSubmit = (e) => {
@@ -25,11 +16,9 @@ const Todo= () => {
       id: new Date().getTime().toString(),
     };
     setList([...list, newTodo]);
-    setMessage({
-      text: "",
-      id: "",
-    });
+    setMessage({text: "",id: "",});
   };
+
 
   const handleDelete = (id) => {
     let newTodos = list.filter((eachItem) => {
@@ -37,6 +26,7 @@ const Todo= () => {
     });
     setList(newTodos);
   };
+
 
   const changeEditState = (id) => {
     setEditingItem({
@@ -66,14 +56,8 @@ const Todo= () => {
       }
     });
     setList(newTodos);
-    setMessage({
-      text: "",
-      id: "",
-    });
-    setEditingItem({
-      id: "",
-      isEditing: false,
-    });
+    setMessage({text: "",id: "",});
+    setEditingItem({id: "",isEditing: false,});
   };
 
   return (
