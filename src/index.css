@@ -27,7 +27,7 @@ button{
   display: flex;flex-wrap: wrap;position: absolute;
 }
 .btn-edit{
-  margin-left: 367px;background-color:darkgreen;
+  margin-left: 367px;background-color:lightgray;border: 1.5px solid black;color: black;
 }
 .btn-delete{
   background-color:darkred;
