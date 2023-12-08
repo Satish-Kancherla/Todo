@@ -3,7 +3,7 @@ body {
 }
 
 .todo-form{
-  width:1000px;height: auto;margin-top: 200px; margin-left: 450px; background-color:white /* #FFF6F6 */;border-radius: 20px; box-shadow: 0 20px 20px rgba(0,0,0,0.6);margin-bottom: 130px;
+  width:1000px;height: auto;margin-top: 180px; margin-left: 450px; background-color:white /* #FFF6F6 */;border-radius: 20px; box-shadow: 0 20px 20px rgba(0,0,0,0.6);margin-bottom: 130px;
 }
 h1{
   font-size: 50px;padding-top: 40px;color:rgb(14, 14, 77);
@@ -17,17 +17,20 @@ input{
   height:45px;padding-left: 10px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 button{
-  width:150px;height: 43px;background-color:  lightslategray;color: white;border: none;font-size: 20px;font-weight: bold;border-radius: 5px;margin-left:1px;margin-top: 10px;
+  width:150px;height: 43px;background-color:  rgb(14, 14, 77);color: white;border: none;font-size: 20px;font-weight: bold;border-radius: 5px;margin-left:1px;margin-top: 10px;
 }
 
 .content-2{
   display: flex;padding-left: 200px;
 }
 .content-button{
-  display: flex;flex-wrap: wrap;position: absolute;/* right:720px; */
+  display: flex;flex-wrap: wrap;position: absolute;
 }
 .btn-edit{
-  margin-left: 367px;
+  margin-left: 367px;background-color:darkgreen;
+}
+.btn-delete{
+  background-color:darkred;
 }
 .content-2 button{
   margin-top: 26px;border-radius: 5px;height: 46px;width:70px;font-size: 15px;
