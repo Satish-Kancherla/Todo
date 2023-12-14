@@ -17,9 +17,12 @@ input{
   height:45px;padding-left: 10px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 button{
-  width:150px;height: 43px;background-color:  rgb(14, 14, 77);color: white;border: none;font-size: 20px;font-weight: bold;border-radius: 5px;margin-left:1px;margin-top: 10px;
+  width:150px;height: 43px;background-color:  rgb(14, 14, 77);color: white;border: none;font-size: 20px;font-weight: bold;
+  border-radius: 5px;margin-left:1px;margin-top: 10px;cursor: pointer;
 }
-
+button:hover{
+   text-transform:uppercase;
+}
 .content-2{
   display: flex;padding-left: 200px;
 }
@@ -29,8 +32,14 @@ button{
 .btn-edit{
   margin-left: 367px;background-color:lightgray;border: 1.5px solid black;color: black;
 }
+.btn-edit:hover{
+  background-color: white;
+}
 .btn-delete{
-  background-color:darkred;
+  background-color:darkred;padding-left: 4px;
+}
+.btn-delete:hover{
+  border: 2px solid darkred;
 }
 .content-2 button{
   margin-top: 26px;border-radius: 5px;height: 46px;width:70px;font-size: 15px;
